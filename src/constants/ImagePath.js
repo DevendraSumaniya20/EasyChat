@@ -1,10 +1,11 @@
 export default {
-  icStatus: require('../assets/images/ic_camera.png'),
+  icStatus: require('../assets/images/ic_status.png'),
   icCalls: require('../assets/images/ic_phone.png'),
   icCamera: require('../assets/images/ic_camera.png'),
   icChats: require('../assets/images/ic_chat.png'),
   icSettings: require('../assets/images/ic_setting.png'),
-  icLogo: require('../assets/images/logo.png'),
+  icLogo: require('../assets/images/logo.jpeg'),
+  icLogoBlack: require('../assets/images/ic_LogoBlack.png'),
   icForward: require('../assets/images/ic_forward.png'),
   icBack: require('../assets/images/ic_back.png'),
   icEdit: require('../assets/images/ic_edit.png'),
