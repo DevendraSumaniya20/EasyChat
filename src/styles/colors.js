@@ -1,8 +1,9 @@
 export default {
-  themeColor: '#256801',
+  themeColor: '#075e54',
   white: '#ffffff',
-  black: '#111111',
-  blue: 'blue',
-  lightBlue: '#0096FF',
-  grey: 'grey',
+  black: '#00000',
+  lightBlue: '#34B7F1',
+  grey: '#ece5dd',
+  lightGreen: '#25d366',
+  secondaryColor: '#128c7e',
 };

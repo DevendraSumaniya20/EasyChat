@@ -11,16 +11,16 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		835AD048C66CA465ED1355A2 /* libPods-EasyChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 989855B81DB45646D7FE0874 /* libPods-EasyChat.a */; };
-		89C7781C23DD250A6F7BCBB7 /* libPods-EasyChat-EasyChatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5513775F9D0370742BADA14 /* libPods-EasyChat-EasyChatTests.a */; };
-		CD3F2949B8944539B8585E8E /* CircularStd-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E44CC13EC0E440BA9A58943A /* CircularStd-Black.ttf */; };
-		34DE2675E56B43CDAD8C2E5E /* CircularStd-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044808F175974933B6CF6D74 /* CircularStd-Bold.ttf */; };
 		30685AE19B644D3790C10843 /* CircularStd-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8079BF532374BB4A7B2D78A /* CircularStd-Book.ttf */; };
-		8275181165594292A35B2712 /* CircularStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6105BCB796A34A338965E765 /* CircularStd-Medium.ttf */; };
-		986DE79D4D4F48539EE2CACC /* Comfortaa_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B23D292916A497399FD3CB6 /* Comfortaa_Bold.ttf */; };
+		34DE2675E56B43CDAD8C2E5E /* CircularStd-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044808F175974933B6CF6D74 /* CircularStd-Bold.ttf */; };
 		5F4DDFAED6F7467E9319EBF2 /* Comfortaa_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DDF949B19CC4FBA96C8F232 /* Comfortaa_Regular.ttf */; };
 		7B8E15608492445D81AEF8A0 /* Comfortaa_Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D58E199B5A17457090583D66 /* Comfortaa_Thin.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8275181165594292A35B2712 /* CircularStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6105BCB796A34A338965E765 /* CircularStd-Medium.ttf */; };
+		835AD048C66CA465ED1355A2 /* libPods-EasyChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 989855B81DB45646D7FE0874 /* libPods-EasyChat.a */; };
+		89C7781C23DD250A6F7BCBB7 /* libPods-EasyChat-EasyChatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5513775F9D0370742BADA14 /* libPods-EasyChat-EasyChatTests.a */; };
+		986DE79D4D4F48539EE2CACC /* Comfortaa_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B23D292916A497399FD3CB6 /* Comfortaa_Bold.ttf */; };
+		CD3F2949B8944539B8585E8E /* CircularStd-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E44CC13EC0E440BA9A58943A /* CircularStd-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* EasyChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyChatTests.m; sourceTree = "<group>"; };
 		0442462CFB5E8353EA1B73D9 /* Pods-EasyChat-EasyChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyChat-EasyChatTests.release.xcconfig"; path = "Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		044808F175974933B6CF6D74 /* CircularStd-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Bold.ttf"; path = "../src/assets/fonts/CircularStd-Bold.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* EasyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = EasyChat/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = EasyChat/AppDelegate.mm; sourceTree = "<group>"; };
@@ -45,19 +46,18 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EasyChat/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EasyChat/main.m; sourceTree = "<group>"; };
 		49FF04D5AC4751FBEAAD4AC5 /* Pods-EasyChat-EasyChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyChat-EasyChatTests.debug.xcconfig"; path = "Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6105BCB796A34A338965E765 /* CircularStd-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Medium.ttf"; path = "../src/assets/fonts/CircularStd-Medium.ttf"; sourceTree = "<group>"; };
+		6DDF949B19CC4FBA96C8F232 /* Comfortaa_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Comfortaa_Regular.ttf; path = ../src/assets/fonts/Comfortaa_Regular.ttf; sourceTree = "<group>"; };
+		7B23D292916A497399FD3CB6 /* Comfortaa_Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Comfortaa_Bold.ttf; path = ../src/assets/fonts/Comfortaa_Bold.ttf; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = EasyChat/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		989855B81DB45646D7FE0874 /* libPods-EasyChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5513775F9D0370742BADA14 /* libPods-EasyChat-EasyChatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyChat-EasyChatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71F6BBA7C4D1EC3B29DC9FE /* Pods-EasyChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyChat.debug.xcconfig"; path = "Target Support Files/Pods-EasyChat/Pods-EasyChat.debug.xcconfig"; sourceTree = "<group>"; };
 		D48AE4BC82AA3FC7AA952558 /* Pods-EasyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyChat.release.xcconfig"; path = "Target Support Files/Pods-EasyChat/Pods-EasyChat.release.xcconfig"; sourceTree = "<group>"; };
+		D58E199B5A17457090583D66 /* Comfortaa_Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Comfortaa_Thin.ttf; path = ../src/assets/fonts/Comfortaa_Thin.ttf; sourceTree = "<group>"; };
+		E44CC13EC0E440BA9A58943A /* CircularStd-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Black.ttf"; path = "../src/assets/fonts/CircularStd-Black.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		E44CC13EC0E440BA9A58943A /* CircularStd-Black.ttf */ = {isa = PBXFileReference; name = "CircularStd-Black.ttf"; path = "../src/assets/fonts/CircularStd-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		044808F175974933B6CF6D74 /* CircularStd-Bold.ttf */ = {isa = PBXFileReference; name = "CircularStd-Bold.ttf"; path = "../src/assets/fonts/CircularStd-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F8079BF532374BB4A7B2D78A /* CircularStd-Book.ttf */ = {isa = PBXFileReference; name = "CircularStd-Book.ttf"; path = "../src/assets/fonts/CircularStd-Book.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6105BCB796A34A338965E765 /* CircularStd-Medium.ttf */ = {isa = PBXFileReference; name = "CircularStd-Medium.ttf"; path = "../src/assets/fonts/CircularStd-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7B23D292916A497399FD3CB6 /* Comfortaa_Bold.ttf */ = {isa = PBXFileReference; name = "Comfortaa_Bold.ttf"; path = "../src/assets/fonts/Comfortaa_Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6DDF949B19CC4FBA96C8F232 /* Comfortaa_Regular.ttf */ = {isa = PBXFileReference; name = "Comfortaa_Regular.ttf"; path = "../src/assets/fonts/Comfortaa_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D58E199B5A17457090583D66 /* Comfortaa_Thin.ttf */ = {isa = PBXFileReference; name = "Comfortaa_Thin.ttf"; path = "../src/assets/fonts/Comfortaa_Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F8079BF532374BB4A7B2D78A /* CircularStd-Book.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Book.ttf"; path = "../src/assets/fonts/CircularStd-Book.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +164,7 @@
 			sourceTree = "<group>";
 		};
 		C9F39C76A8BF49A1A94CE0A5 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				E44CC13EC0E440BA9A58943A /* CircularStd-Black.ttf */,
 				044808F175974933B6CF6D74 /* CircularStd-Bold.ttf */,
@@ -175,8 +175,8 @@
 				D58E199B5A17457090583D66 /* Comfortaa_Thin.ttf */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
 			path = "";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
