@@ -35,6 +35,20 @@
 			</dict>
 		</dict>
 	</dict>
+
+
+
+	<key>NSCameraUsageDescription</key>
+	<string>EasyChat want to access your camera for upload photo</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>EasyChat want to access your microphone to send audio message</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>EasyChat want to access your gallery for upload photo</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>EasyChat want to access your gallery for upload photo</string>
+
+
+
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string/>
 	<key>UILaunchStoryboardName</key>

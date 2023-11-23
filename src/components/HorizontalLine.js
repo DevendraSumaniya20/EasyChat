@@ -10,7 +10,7 @@ export default HorizontalLine;
 
 const styles = StyleSheet.create({
   lineStyle: {
-    borderBottomWidth: 0.8,
+    borderBottomWidth: 0.9,
     borderBottomColor: colors.grey,
     height: 1,
   },

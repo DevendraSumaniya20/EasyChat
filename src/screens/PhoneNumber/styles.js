@@ -1,23 +1,36 @@
 import {StyleSheet} from 'react-native';
 import fontFamily from '../../styles/fontFamily';
+import {
+  height,
+  moderateScale,
+  moderateScaleVertical,
+  textScale,
+  width,
+} from '../../styles/responsiveSize';
 import colors from '../../styles/colors';
 
 const styles = StyleSheet.create({
   descStyle: {
-    fontSize: 16,
+    fontSize: textScale(16),
     fontFamily: fontFamily.regular,
     textAlign: 'center',
-    margin: 16,
+    margin: moderateScaleVertical(16),
   },
   dialCodeStyle: {
-    fontSize: 20,
+    fontSize: textScale(20),
     fontFamily: fontFamily.bold,
   },
   phoneInputStyle: {
     flexDirection: 'row',
     alignItems: 'center',
     borderBottomWidth: 0.7,
-    phoneInputStyle: 8,
+    paddingHorizontal: moderateScale(8),
+  },
+  inputStyle: {
+    borderBottomColor: colors.grey,
+    padding: moderateScale(12),
+    fontFamily: fontFamily.regular,
+    fontSize: textScale(16),
   },
 });
 

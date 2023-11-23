@@ -1,6 +1,13 @@
 import {StyleSheet} from 'react-native';
 import fontFamily from '../../styles/fontFamily';
 import colors from '../../styles/colors';
+import {
+  height,
+  moderateScale,
+  moderateScaleVertical,
+  textScale,
+  width,
+} from '../../styles/responsiveSize';
 
 const styles = StyleSheet.create({
   container: {
@@ -10,27 +17,25 @@ const styles = StyleSheet.create({
   subContainer: {
     flex: 1,
     alignItems: 'center',
-    paddingHorizontal: 16,
+    paddingHorizontal: moderateScale(16),
   },
   logoStyle: {
-    width: 400,
-    height: 400,
+    width: width / 1.5,
+    height: height / 2,
     resizeMode: 'contain',
     alignSelf: 'center',
   },
   headingStyle: {
     fontWeight: 'bold',
-    fontSize: 30,
+    fontSize: textScale(32),
     fontFamily: fontFamily.bold,
     alignSelf: 'center',
-    marginTop: 30,
-    marginBottom: 40,
   },
   descStyle: {
-    fontSize: 18,
+    fontSize: textScale(18),
     fontFamily: fontFamily.regular,
     textAlign: 'center',
-    margin: 20,
+    marginTop: moderateScaleVertical(20),
     alignItems: 'center',
     alignSelf: 'center',
   },
@@ -39,7 +44,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   privacyText: {
-    fontSize: 16,
+    fontSize: textScale(16),
     color: colors.lightBlue,
     fontWeight: '500',
     textAlign: 'center',
@@ -47,7 +52,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   termsOfserviceText: {
-    fontSize: 16,
+    fontSize: textScale(16),
     color: colors.lightBlue,
     fontWeight: '500',
     textAlign: 'center',
@@ -56,13 +61,13 @@ const styles = StyleSheet.create({
   },
 
   agreeandContinueText: {
-    fontSize: 30,
+    fontSize: textScale(30),
     fontFamily: fontFamily.bold,
     color: colors.secondaryColor,
   },
   agreeandContinueTouchable: {
     alignSelf: 'center',
-    marginTop: 60,
+    marginTop: moderateScaleVertical(60),
   },
 });
 

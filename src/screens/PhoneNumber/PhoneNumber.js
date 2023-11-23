@@ -15,8 +15,17 @@ import HorizontalLine from '../../components/HorizontalLine';
 import ImagePath from '../../constants/ImagePath';
 import colors from '../../styles/colors';
 import CountriesPicker from '../../components/CountriesPicker';
+import {
+  moderateScale,
+  moderateScaleVertical,
+} from '../../styles/responsiveSize';
+import {useNavigation} from '@react-navigation/native';
+import NavigationString from '../../constants/NavigationString';
+import TextInputComponent from '../../components/TextInputComponent';
 
 const PhoneNumber = () => {
+  const navigation = useNavigation();
+
   const [selectedCountry, setSelectedCountry] = useState({
     name: 'India',
     dialCode: '+91',
@@ -27,11 +36,28 @@ const PhoneNumber = () => {
   const fetchCountry = data => {
     setSelectedCountry(data);
   };
+
+  const leftCustomView = () => {
+    return (
+      <TouchableOpacity
+        onPress={() => {
+          navigation.goBack();
+        }}>
+        <Image source={ImagePath.icBack} />
+      </TouchableOpacity>
+    );
+  };
+
   return (
     <WrapperContainer containerStyles={{paddingHorizontal: 0}}>
       <HeaderComponents
         centerText={strings.ENTER_YOUR_PHONE_NUMBER}
         containerStyle={{paddingHorizontal: 8}}
+        leftCustomView={leftCustomView}
+        isLeftView={true}
+        onPressRight={() => {
+          navigation.navigate(NavigationString.EDIT_PROFILE);
+        }}
       />
       <Text style={styles.descStyle}>{strings.EASYCHAT_WILL_SEND}</Text>
       <HorizontalLine />
@@ -42,14 +68,10 @@ const PhoneNumber = () => {
       <View style={styles.phoneInputStyle}>
         <Text style={styles.dialCodeStyle}>{selectedCountry?.dialCode}</Text>
         <View style={{flex: 1}}>
-          <TextInput
+          <TextInputComponent
             keyboardType="phone-pad"
             placeholder={strings.ENTER_YOUR_PHONE_NUMBER}
-            style={{
-              paddingVertical: 12,
-              borderBottomColor: colors.grey,
-              paddingHorizontal: 12,
-            }}
+            style={styles.inputStyle}
           />
         </View>
       </View>

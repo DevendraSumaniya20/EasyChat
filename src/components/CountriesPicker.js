@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React, {Fragment, useState} from 'react';
+import React, {Fragment, useCallback, useState} from 'react';
 import ImagePath from '../constants/ImagePath';
 import colors from '../styles/colors';
 import Modal from 'react-native-modal';
@@ -15,31 +15,45 @@ import HeaderComponents from './HeaderComponents';
 import countries from './countries';
 import HorizontalLine from './HorizontalLine';
 import fontFamily from '../styles/fontFamily';
+import {textScale} from '../styles/responsiveSize';
+import {SvgUri} from 'react-native-svg';
 
 const CountriesPicker = ({fetchCountry = () => {}, value}) => {
   const [data, setData] = useState(countries);
 
   const [showModal, setShowModal] = useState(false);
 
-  const renderItem = ({item, index}) => {
-    return (
-      <TouchableOpacity
-        activeOpacity={0.7}
-        style={{marginHorizontal: 16}}
-        onPress={() => {
-          onSelectCountry(item);
-        }}>
-        <Text>
-          {item?.name} ({item?.dialCode})
-        </Text>
-      </TouchableOpacity>
-    );
-  };
+  const renderItem = useCallback(
+    ({item, index}) => {
+      let isSelected = value == item.name;
+      return (
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={{marginHorizontal: 16, flexDirection: 'row'}}
+          onPress={() => {
+            onSelectCountry(item);
+          }}>
+          {/* <SvgUri width="100%" height="100%" uri={item?.flag} /> */}
+
+          <Text
+            style={{
+              ...styles.nameStyleText,
+              color: isSelected ? colors.lightBlue : colors.black,
+              fontFamily: isSelected ? fontFamily.bold : fontFamily.regular,
+            }}>
+            {item?.name} ({item?.dialCode})
+          </Text>
+        </TouchableOpacity>
+      );
+    },
+    [data, value],
+  );
 
   const onSelectCountry = item => {
     fetchCountry(item);
     setShowModal(false);
   };
+
   return (
     <Fragment>
       <TouchableOpacity
@@ -80,7 +94,7 @@ const CountriesPicker = ({fetchCountry = () => {}, value}) => {
   );
 };
 
-export default CountriesPicker;
+export default React.memo(CountriesPicker);
 
 const styles = StyleSheet.create({
   container: {
@@ -95,6 +109,11 @@ const styles = StyleSheet.create({
   valueStyleText: {
     color: colors.lightBlue,
     fontFamily: fontFamily.bold,
-    fontSize: 18,
+    fontSize: textScale(18),
+  },
+  nameStyleText: {
+    color: colors.lightBlue,
+    fontFamily: fontFamily.regular,
+    fontSize: textScale(16),
   },
 });
