@@ -12,17 +12,22 @@ const HeaderComponents = ({
   containerStyle = {},
   rightTextStyle = {},
   onPressRight = () => {},
+  isRight = true,
+  rightPressActive = true,
 }) => {
   return (
     <View style={{...styles.container, ...containerStyle}}>
       {isLeftView ? leftCustomView() : <View />}
       <Text style={{...styles.centerTextStyle}}>{centerText}</Text>
-
-      <TouchableOpacity onPress={onPressRight}>
-        <Text style={{...styles.rightTextStyle, ...rightTextStyle}}>
-          {rightText}
-        </Text>
-      </TouchableOpacity>
+      {isRight ? (
+        <TouchableOpacity onPress={onPressRight} disabled={rightPressActive}>
+          <Text style={{...styles.rightTextStyle, ...rightTextStyle}}>
+            {rightText}
+          </Text>
+        </TouchableOpacity>
+      ) : (
+        <View />
+      )}
     </View>
   );
 };

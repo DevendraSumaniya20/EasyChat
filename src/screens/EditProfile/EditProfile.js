@@ -20,8 +20,10 @@ import {moderateScale} from '../../styles/responsiveSize';
 import TextInputComponent from '../../components/TextInputComponent';
 import ImagePicker from 'react-native-image-crop-picker';
 import {androidCameraPermission} from '../../utils/permissions';
+import colors from '../../styles/colors';
+import fontFamily from '../../styles/fontFamily';
 
-const EditProfile = () => {
+const EditProfile = ({route}) => {
   const navigation = useNavigation();
 
   const [state, setState] = useState({
@@ -30,6 +32,8 @@ const EditProfile = () => {
   });
 
   const {image, name} = state;
+
+  const {data} = route.params;
 
   const updateState = data => {
     setState({...state, ...data});
@@ -59,6 +63,11 @@ const EditProfile = () => {
       });
     }
   };
+  const onDone = () => {
+    navigation.navigate(NavigationString.OTP_VERIFICATION, {
+      data: {...state, ...data},
+    });
+  };
 
   return (
     <WrapperContainer containerStyles={{paddingHorizontal: 0}}>
@@ -67,9 +76,12 @@ const EditProfile = () => {
         containerStyle={{paddingHorizontal: 8}}
         leftCustomView={leftCustomView}
         isLeftView={true}
-        onPressRight={() => {
-          navigation.navigate(NavigationString.OTP_VERIFICATION);
+        onPressRight={onDone}
+        rightTextStyle={{
+          color: name.length > 3 ? colors.lightBlue : colors.grey,
+          fontFamily: name.length > 3 ? fontFamily.bold : fontFamily.regular,
         }}
+        rightPressActive={name.length < 3}
       />
 
       <HorizontalLine />
@@ -85,7 +97,10 @@ const EditProfile = () => {
         </View>
       </View>
       <HorizontalLine />
-      <TextInputComponent placeholder={strings.YOUR_NAME} />
+      <TextInputComponent
+        placeholder={strings.YOUR_NAME}
+        onChangeText={text => updateState({name: text})}
+      />
       <HorizontalLine />
     </WrapperContainer>
   );

@@ -11,14 +11,14 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2ECEC64C26A8409818455472 /* libPods-EasyChat-EasyChatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 462ED71E31C11C74CF50812D /* libPods-EasyChat-EasyChatTests.a */; };
 		30685AE19B644D3790C10843 /* CircularStd-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8079BF532374BB4A7B2D78A /* CircularStd-Book.ttf */; };
 		34DE2675E56B43CDAD8C2E5E /* CircularStd-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044808F175974933B6CF6D74 /* CircularStd-Bold.ttf */; };
 		5F4DDFAED6F7467E9319EBF2 /* Comfortaa_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DDF949B19CC4FBA96C8F232 /* Comfortaa_Regular.ttf */; };
-		6AA2CFB5BB0F9AB65D4C7931 /* libPods-EasyChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA95D1F3C4C0918F3082182 /* libPods-EasyChat.a */; };
+		600AA3F7D0B9FA52CEA2D862 /* libPods-EasyChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E7AFC2D1E3397FCA27B45D /* libPods-EasyChat.a */; };
 		7B8E15608492445D81AEF8A0 /* Comfortaa_Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D58E199B5A17457090583D66 /* Comfortaa_Thin.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8275181165594292A35B2712 /* CircularStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6105BCB796A34A338965E765 /* CircularStd-Medium.ttf */; };
+		8E0F2BFC331453F914C56DC8 /* libPods-EasyChat-EasyChatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF8226A0EB95C1EDF55D7C8 /* libPods-EasyChat-EasyChatTests.a */; };
 		986DE79D4D4F48539EE2CACC /* Comfortaa_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B23D292916A497399FD3CB6 /* Comfortaa_Bold.ttf */; };
 		CD3F2949B8944539B8585E8E /* CircularStd-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E44CC13EC0E440BA9A58943A /* CircularStd-Black.ttf */; };
 /* End PBXBuildFile section */
@@ -38,26 +38,26 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* EasyChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyChatTests.m; sourceTree = "<group>"; };
 		044808F175974933B6CF6D74 /* CircularStd-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Bold.ttf"; path = "../src/assets/fonts/CircularStd-Bold.ttf"; sourceTree = "<group>"; };
+		07672741C7018286FDB77E82 /* Pods-EasyChat-EasyChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyChat-EasyChatTests.release.xcconfig"; path = "Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* EasyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = EasyChat/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = EasyChat/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = EasyChat/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EasyChat/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EasyChat/main.m; sourceTree = "<group>"; };
-		462ED71E31C11C74CF50812D /* libPods-EasyChat-EasyChatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyChat-EasyChatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		47B4AC91C328BC708182A119 /* Pods-EasyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyChat.release.xcconfig"; path = "Target Support Files/Pods-EasyChat/Pods-EasyChat.release.xcconfig"; sourceTree = "<group>"; };
+		16E7AFC2D1E3397FCA27B45D /* libPods-EasyChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF8226A0EB95C1EDF55D7C8 /* libPods-EasyChat-EasyChatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyChat-EasyChatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5FAF814FBA32B870EF42A1 /* Pods-EasyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyChat.release.xcconfig"; path = "Target Support Files/Pods-EasyChat/Pods-EasyChat.release.xcconfig"; sourceTree = "<group>"; };
 		6105BCB796A34A338965E765 /* CircularStd-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Medium.ttf"; path = "../src/assets/fonts/CircularStd-Medium.ttf"; sourceTree = "<group>"; };
 		6DDF949B19CC4FBA96C8F232 /* Comfortaa_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Comfortaa_Regular.ttf; path = ../src/assets/fonts/Comfortaa_Regular.ttf; sourceTree = "<group>"; };
 		7B23D292916A497399FD3CB6 /* Comfortaa_Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Comfortaa_Bold.ttf; path = ../src/assets/fonts/Comfortaa_Bold.ttf; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = EasyChat/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8458151C9B2260B6DD2DE6D9 /* Pods-EasyChat-EasyChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyChat-EasyChatTests.debug.xcconfig"; path = "Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests.debug.xcconfig"; sourceTree = "<group>"; };
-		930ADB8A77D7F396095EEDDF /* Pods-EasyChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyChat.debug.xcconfig"; path = "Target Support Files/Pods-EasyChat/Pods-EasyChat.debug.xcconfig"; sourceTree = "<group>"; };
-		C1BCCEE9302F2425DB52DE5A /* Pods-EasyChat-EasyChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyChat-EasyChatTests.release.xcconfig"; path = "Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		C1ECB96F01D6D5C7D3749C59 /* Pods-EasyChat-EasyChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyChat-EasyChatTests.debug.xcconfig"; path = "Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D58E199B5A17457090583D66 /* Comfortaa_Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Comfortaa_Thin.ttf; path = ../src/assets/fonts/Comfortaa_Thin.ttf; sourceTree = "<group>"; };
+		D78D74D2F9A025F03A0ECAF0 /* Pods-EasyChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyChat.debug.xcconfig"; path = "Target Support Files/Pods-EasyChat/Pods-EasyChat.debug.xcconfig"; sourceTree = "<group>"; };
 		E44CC13EC0E440BA9A58943A /* CircularStd-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Black.ttf"; path = "../src/assets/fonts/CircularStd-Black.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F8079BF532374BB4A7B2D78A /* CircularStd-Book.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Book.ttf"; path = "../src/assets/fonts/CircularStd-Book.ttf"; sourceTree = "<group>"; };
-		FAA95D1F3C4C0918F3082182 /* libPods-EasyChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ECEC64C26A8409818455472 /* libPods-EasyChat-EasyChatTests.a in Frameworks */,
+				8E0F2BFC331453F914C56DC8 /* libPods-EasyChat-EasyChatTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AA2CFB5BB0F9AB65D4C7931 /* libPods-EasyChat.a in Frameworks */,
+				600AA3F7D0B9FA52CEA2D862 /* libPods-EasyChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				FAA95D1F3C4C0918F3082182 /* libPods-EasyChat.a */,
-				462ED71E31C11C74CF50812D /* libPods-EasyChat-EasyChatTests.a */,
+				16E7AFC2D1E3397FCA27B45D /* libPods-EasyChat.a */,
+				1CF8226A0EB95C1EDF55D7C8 /* libPods-EasyChat-EasyChatTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,10 +155,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				930ADB8A77D7F396095EEDDF /* Pods-EasyChat.debug.xcconfig */,
-				47B4AC91C328BC708182A119 /* Pods-EasyChat.release.xcconfig */,
-				8458151C9B2260B6DD2DE6D9 /* Pods-EasyChat-EasyChatTests.debug.xcconfig */,
-				C1BCCEE9302F2425DB52DE5A /* Pods-EasyChat-EasyChatTests.release.xcconfig */,
+				D78D74D2F9A025F03A0ECAF0 /* Pods-EasyChat.debug.xcconfig */,
+				3B5FAF814FBA32B870EF42A1 /* Pods-EasyChat.release.xcconfig */,
+				C1ECB96F01D6D5C7D3749C59 /* Pods-EasyChat-EasyChatTests.debug.xcconfig */,
+				07672741C7018286FDB77E82 /* Pods-EasyChat-EasyChatTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -185,12 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "EasyChatTests" */;
 			buildPhases = (
-				8CC7D00AC61398C527D8FDB9 /* [CP] Check Pods Manifest.lock */,
+				BA38D26BA08A6256177E2D7E /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C3D711C53220315BA8EA7BDA /* [CP] Embed Pods Frameworks */,
-				CEB29FE71E821EFC57B9F11B /* [CP] Copy Pods Resources */,
+				54349ABE36B40967BEF6382C /* [CP] Embed Pods Frameworks */,
+				7890E7E5BD938E4D5CB7939C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,14 +206,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "EasyChat" */;
 			buildPhases = (
-				2B00A62E37982307D233E39B /* [CP] Check Pods Manifest.lock */,
+				125D6CC191CB7A6C63BC2360 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				45A56FC1ED866AA066D5EA5C /* [CP] Embed Pods Frameworks */,
-				5EA16741493672C6A50215FA /* [CP] Copy Pods Resources */,
+				D4E491CC27FC033ECF1C532A /* [CP] Embed Pods Frameworks */,
+				D1A292DE5C63D150992AEB6E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,7 +303,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		2B00A62E37982307D233E39B /* [CP] Check Pods Manifest.lock */ = {
+		125D6CC191CB7A6C63BC2360 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,41 +325,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		45A56FC1ED866AA066D5EA5C /* [CP] Embed Pods Frameworks */ = {
+		54349ABE36B40967BEF6382C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyChat/Pods-EasyChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyChat/Pods-EasyChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyChat/Pods-EasyChat-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5EA16741493672C6A50215FA /* [CP] Copy Pods Resources */ = {
+		7890E7E5BD938E4D5CB7939C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyChat/Pods-EasyChat-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyChat/Pods-EasyChat-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyChat/Pods-EasyChat-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8CC7D00AC61398C527D8FDB9 /* [CP] Check Pods Manifest.lock */ = {
+		BA38D26BA08A6256177E2D7E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -381,38 +381,38 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C3D711C53220315BA8EA7BDA /* [CP] Embed Pods Frameworks */ = {
+		D1A292DE5C63D150992AEB6E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CEB29FE71E821EFC57B9F11B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EasyChat/Pods-EasyChat-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EasyChat/Pods-EasyChat-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyChat-EasyChatTests/Pods-EasyChat-EasyChatTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyChat/Pods-EasyChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E491CC27FC033ECF1C532A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyChat/Pods-EasyChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyChat/Pods-EasyChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyChat/Pods-EasyChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -467,7 +467,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8458151C9B2260B6DD2DE6D9 /* Pods-EasyChat-EasyChatTests.debug.xcconfig */;
+			baseConfigurationReference = C1ECB96F01D6D5C7D3749C59 /* Pods-EasyChat-EasyChatTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -494,7 +494,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1BCCEE9302F2425DB52DE5A /* Pods-EasyChat-EasyChatTests.release.xcconfig */;
+			baseConfigurationReference = 07672741C7018286FDB77E82 /* Pods-EasyChat-EasyChatTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -518,7 +518,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 930ADB8A77D7F396095EEDDF /* Pods-EasyChat.debug.xcconfig */;
+			baseConfigurationReference = D78D74D2F9A025F03A0ECAF0 /* Pods-EasyChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -545,7 +545,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47B4AC91C328BC708182A119 /* Pods-EasyChat.release.xcconfig */;
+			baseConfigurationReference = 3B5FAF814FBA32B870EF42A1 /* Pods-EasyChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

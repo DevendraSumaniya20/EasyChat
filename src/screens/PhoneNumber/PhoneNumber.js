@@ -22,19 +22,26 @@ import {
 import {useNavigation} from '@react-navigation/native';
 import NavigationString from '../../constants/NavigationString';
 import TextInputComponent from '../../components/TextInputComponent';
+import fontFamily from '../../styles/fontFamily';
 
 const PhoneNumber = () => {
   const navigation = useNavigation();
 
-  const [selectedCountry, setSelectedCountry] = useState({
-    name: 'India',
-    dialCode: '+91',
-    isoCode: 'IN',
-    flag: 'https://cdn.kcak11.com/CountryFlags/countries/in.svg',
+  const [state, setState] = useState({
+    selectedCountry: {
+      name: 'India',
+      dialCode: '+91',
+      isoCode: 'IN',
+      flag: 'https://cdn.kcak11.com/CountryFlags/countries/in.svg',
+    },
+    phoneNumber: '',
   });
+  const {selectedCountry, phoneNumber} = state;
+
+  const updateState = data => setState(state => ({...state, ...data}));
 
   const fetchCountry = data => {
-    setSelectedCountry(data);
+    updateState({selectedCountry: data});
   };
 
   const leftCustomView = () => {
@@ -48,6 +55,10 @@ const PhoneNumber = () => {
     );
   };
 
+  const onDone = () => {
+    navigation.navigate(NavigationString.EDIT_PROFILE, {data: state});
+  };
+
   return (
     <WrapperContainer containerStyles={{paddingHorizontal: 0}}>
       <HeaderComponents
@@ -55,9 +66,13 @@ const PhoneNumber = () => {
         containerStyle={{paddingHorizontal: 8}}
         leftCustomView={leftCustomView}
         isLeftView={true}
-        onPressRight={() => {
-          navigation.navigate(NavigationString.EDIT_PROFILE);
+        onPressRight={onDone}
+        rightTextStyle={{
+          color: phoneNumber.length > 8 ? colors.lightBlue : colors.grey,
+          fontFamily:
+            phoneNumber.length > 8 ? fontFamily.bold : fontFamily.regular,
         }}
+        rightPressActive={phoneNumber.length < 8}
       />
       <Text style={styles.descStyle}>{strings.EASYCHAT_WILL_SEND}</Text>
       <HorizontalLine />
@@ -72,6 +87,7 @@ const PhoneNumber = () => {
             keyboardType="phone-pad"
             placeholder={strings.ENTER_YOUR_PHONE_NUMBER}
             style={styles.inputStyle}
+            onChangeText={text => updateState({phoneNumber: text})}
           />
         </View>
       </View>
