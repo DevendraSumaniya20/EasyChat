@@ -24,24 +24,12 @@ const styles = StyleSheet.create({
     color: colors.grey,
     textAlign: 'center',
   },
-  borderStyleBase: {
-    width: moderateScale(30),
-    height: moderateScale(40),
-  },
-
-  borderStyleHighLighted: {
-    borderColor: '#03DAC6',
-  },
-
-  underlineStyleBase: {
-    width: moderateScale(30),
-    height: moderateScale(45),
-    borderWidth: 0,
+  inputStyle: {
+    marginRight: moderateScale(8),
+    height: moderateScale(42),
+    width: moderateScale(42),
     borderBottomWidth: 1,
-  },
-
-  underlineStyleHighLighted: {
-    borderColor: '#03DAC6',
+    textAlign: 'center',
   },
 });
 

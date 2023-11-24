@@ -22,6 +22,7 @@ import ImagePicker from 'react-native-image-crop-picker';
 import {androidCameraPermission} from '../../utils/permissions';
 import colors from '../../styles/colors';
 import fontFamily from '../../styles/fontFamily';
+import actions from '../../redux/actions';
 
 const EditProfile = ({route}) => {
   const navigation = useNavigation();
@@ -63,10 +64,19 @@ const EditProfile = ({route}) => {
       });
     }
   };
-  const onDone = () => {
-    navigation.navigate(NavigationString.OTP_VERIFICATION, {
-      data: {...state, ...data},
-    });
+  const onDone = async () => {
+    let apiData = {...state, ...data};
+
+    try {
+      const res = await actions.signUp(apiData);
+      if (!!res?.data) {
+        navigation.navigate(NavigationString.OTP_VERIFICATION, {
+          data: res?.data,
+        });
+      }
+    } catch (error) {
+      console.log('error in api data onDone: ' + error);
+    }
   };
 
   return (

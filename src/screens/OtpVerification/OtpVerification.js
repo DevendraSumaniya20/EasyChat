@@ -1,4 +1,11 @@
-import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+  Alert,
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React from 'react';
 import WrapperContainer from '../../components/WrapperContainer';
 import strings from '../../constants/lang';
@@ -12,7 +19,10 @@ import {
   moderateScale,
   moderateScaleVertical,
 } from '../../styles/responsiveSize';
-import OTPInputView from '@twotalltotems/react-native-otp-input';
+
+import OtpInputs from 'react-native-otp-inputs';
+import actions from '../../redux/actions';
+import {otpVerify} from '../../redux/actions/auth';
 
 const OtpVerification = ({route}) => {
   const navigation = useNavigation();
@@ -29,6 +39,21 @@ const OtpVerification = ({route}) => {
         {/* <Text>{strings.EDIT_NUMBER}</Text> */}
       </TouchableOpacity>
     );
+  };
+
+  const handleChange = async value => {
+    if (value.length >= 6) {
+      try {
+        let res = await actions.otpVerify({
+          otp: value,
+          user_id: data._id,
+        });
+        console.log('api success', res);
+      } catch (error) {
+        console.log('error in otp verify', error);
+        Alert.alert(error?.message);
+      }
+    }
   };
 
   return (
@@ -57,15 +82,16 @@ const OtpVerification = ({route}) => {
       </Text>
 
       <View style={{alignItems: 'center', marginHorizontal: moderateScale(16)}}>
-        <OTPInputView
-          style={{width: '80%', height: 200}}
-          pinCount={6}
-          autoFocusOnLoad
-          codeInputFieldStyle={styles.underlineStyleBase}
-          codeInputHighlightStyle={styles.underlineStyleHighLighted}
-          onCodeFilled={code => {
-            console.log(`Code is ${code}, you are good to go!`);
+        <OtpInputs
+          placeholder="*"
+          handleChange={handleChange}
+          numberOfInputs={6}
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            marginVertical: moderateScaleVertical(42),
           }}
+          inputStyles={styles.inputStyle}
         />
       </View>
       <View

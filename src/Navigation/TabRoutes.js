@@ -22,7 +22,7 @@ export default function TabRoutes() {
             return (
               <Image
                 style={{tintColor: focused ? 'blue' : 'black'}}
-                source={ImagePath.icStatus}
+                source={ImagePath.icCamera}
               />
             );
           },
