@@ -9,6 +9,10 @@ export default function (Stack) {
     <>
       <Stack.Screen name={NavigationString.TAB_ROUTES} component={TabRoutes} />
       <Stack.Screen name={NavigationString.USERS} component={Screens.Users} />
+      <Stack.Screen
+        name={NavigationString.MESSAGE}
+        component={Screens.Message}
+      />
     </>
   );
 }

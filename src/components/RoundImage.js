@@ -1,10 +1,18 @@
-import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import React from 'react';
-import {moderateScale, textScale} from '../styles/responsiveSize';
+//import liraries
+import React, {Component} from 'react';
+import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import colors from '../styles/colors';
 import fontFamily from '../styles/fontFamily';
+import {moderateScale, textScale} from '../styles/responsiveSize';
 
-const RoundImage = ({image = '', size = 80, onPress = () => {}}) => {
+const RoundImage = ({
+  image = '',
+  size = 80,
+  onPress = () => {},
+  isStatic = false,
+  imageStyle,
+}) => {
+  let compImg = isStatic ? image : {uri: image};
   return (
     <TouchableOpacity
       activeOpacity={0.7}
@@ -18,6 +26,7 @@ const RoundImage = ({image = '', size = 80, onPress = () => {}}) => {
         justifyContent: 'center',
         borderWidth: 1,
         borderColor: colors.grey,
+        ...imageStyle,
       }}>
       {!!image ? (
         <Image
@@ -26,21 +35,21 @@ const RoundImage = ({image = '', size = 80, onPress = () => {}}) => {
             width: moderateScale(size),
             borderRadius: moderateScale(size / 2),
           }}
-          source={{uri: image}}
+          source={compImg}
         />
       ) : (
-        <Text style={styles.fontStyle}>add Photo</Text>
+        <Text style={styles.textStyle}>add photo</Text>
       )}
     </TouchableOpacity>
   );
 };
 
-export default RoundImage;
-
 const styles = StyleSheet.create({
-  fontStyle: {
+  textStyle: {
     fontSize: textScale(12),
     fontFamily: fontFamily.blackFont,
     color: colors.lightBlue,
   },
 });
+
+export default RoundImage;

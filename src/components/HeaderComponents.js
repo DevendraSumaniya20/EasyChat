@@ -1,4 +1,4 @@
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View, Image} from 'react-native';
 import React from 'react';
 import strings from '../constants/lang';
 import colors from '../styles/colors';
@@ -14,6 +14,7 @@ const HeaderComponents = ({
   onPressRight = () => {},
   isRight = true,
   rightPressActive = true,
+  rightImg = '',
 }) => {
   return (
     <View style={{...styles.container, ...containerStyle}}>
@@ -21,9 +22,13 @@ const HeaderComponents = ({
       <Text style={{...styles.centerTextStyle}}>{centerText}</Text>
       {isRight ? (
         <TouchableOpacity onPress={onPressRight} disabled={rightPressActive}>
-          <Text style={{...styles.rightTextStyle, ...rightTextStyle}}>
-            {rightText}
-          </Text>
+          {rightImg ? (
+            <Image source={rightImg} />
+          ) : (
+            <Text style={{...styles.rightTextStyle, ...rightTextStyle}}>
+              {rightText}
+            </Text>
+          )}
         </TouchableOpacity>
       ) : (
         <View />

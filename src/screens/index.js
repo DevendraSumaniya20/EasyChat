@@ -14,3 +14,4 @@ export {default as OtpVerification} from './OtpVerification/OtpVerification';
 
 //! rest Screens
 export {default as Users} from './Users/Users';
+export {default as Message} from './Message/Message';

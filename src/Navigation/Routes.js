@@ -11,8 +11,6 @@ const Stack = createNativeStackNavigator();
 const Routes = () => {
   const userData = useSelector(state => state.auth);
 
-  console.log('userData ........', userData);
-
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>

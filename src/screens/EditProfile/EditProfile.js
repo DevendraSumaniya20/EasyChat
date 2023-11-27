@@ -65,17 +65,20 @@ const EditProfile = ({route}) => {
     }
   };
   const onDone = async () => {
-    let apiData = {...state, ...data};
-
+    let apiData = {
+      ...state,
+      ...data,
+    };
     try {
       const res = await actions.signUp(apiData);
+      console.log('api res signup', res);
       if (!!res?.data) {
         navigation.navigate(NavigationString.OTP_VERIFICATION, {
           data: res?.data,
         });
       }
     } catch (error) {
-      console.log('error in api data onDone: ' + error);
+      console.log('error raised is signup api', error);
     }
   };
 
